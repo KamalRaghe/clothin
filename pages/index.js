@@ -12,6 +12,7 @@ function SimpleSlider() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
+        
         <div>
           <h3>2</h3>
         </div>
