@@ -15,10 +15,15 @@ function SimpleSlider() {
  }
   return (
     <div>
-      <div style={{height:"100vh"}} className="center">
-          <img onClick={Prev} style={{width:"20vw"}} src={arr[arr.length-1]} ></img>
-          <img style={{width:"40vw",margin:"20px"}} src={arr[0]} ></img>
-          <img onClick={Next} style={{width:"20vw"}} src={arr[1]} ></img>      
+      <div style={{height:"100vh"}} className="center column">
+          <div className="center" >
+            <img onClick={Prev} style={{width:"20vw"}} src={arr[arr.length-1]} ></img>
+            <img style={{width:"40vw",margin:"20px"}} src={arr[0]} ></img>
+            <img onClick={Next} style={{width:"20vw"}} src={arr[1]} ></img>
+          </div>
+        <div> 
+          <button>See all</button>
+        </div>
       </div>
     </div>
   );
