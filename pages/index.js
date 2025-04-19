@@ -19,6 +19,7 @@ function SimpleSlider() {
           <div className="center" >
             <Previous button={Prev} pic={arr[arr.length-1]} />
             <img style={{width:"40vw",margin:"20px"}} src={arr[0]} ></img>
+            <Previous button={Next} pic={arr[1]} />
             <img onClick={Next} style={{width:"20vw"}} src={arr[1]} ></img>
           </div>
         <div> 
