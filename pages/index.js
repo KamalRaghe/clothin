@@ -24,12 +24,6 @@ function SimpleSlider() {
         <div> 
           <button>See all</button>
         </div>
-        {arr.map(pic=>{
-          return( 
-          <div>
-              <img style={{width:"40vw"}} src= {pic} ></img>
-          </div>)
-        })}
       </div>
     </div>
   );
