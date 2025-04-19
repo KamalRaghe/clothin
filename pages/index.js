@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Slider from "react-slick";
+import Previous from "@/comp/prev";
 
 function SimpleSlider() {
  const [arr, setArr] = useState(['TrackPic1.jpeg',"TrackPic2.jpeg","TrackPic3.jpeg",'TrackPic4.jpeg',"TrackPic5.jpeg","TrackPic6.jpeg"])
@@ -17,7 +17,7 @@ function SimpleSlider() {
     <div>
       <div style={{height:"100vh"}} className="center column">
           <div className="center" >
-            <img onClick={Prev} style={{width:"20vw"}} src={arr[arr.length-1]} ></img>
+            <Previous button={Prev} pic={arr[arr.length-1]} />
             <img style={{width:"40vw",margin:"20px"}} src={arr[0]} ></img>
             <img onClick={Next} style={{width:"20vw"}} src={arr[1]} ></img>
           </div>
