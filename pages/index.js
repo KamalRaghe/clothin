@@ -10,25 +10,10 @@ function SimpleSlider() {
     slidesToScroll: 1
   };
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
+    <div className="center">
+        <img style={{width:"20vw"}} src="TrackPic1.jpeg" ></img>
+       <img style={{width:"20vw"}} src="TrackPic2.jpeg" ></img>
+       <img style={{width:"20vw"}} src="TrackPic3.jpeg" ></img>
     </div>
   );
 }
