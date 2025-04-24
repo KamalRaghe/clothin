@@ -14,19 +14,24 @@ function SimpleSlider() {
  }
 
  
- for(let i = arr.length ; i > arr.length/2; i++){
-  if(LastHalf.length < arr.length/2 ){
-  LastHalf.push(arr[i])}
- }
+ for(let i = arr.length-1; i > arr.length/2-1; i--){
+  if(LastHalf.length < arr.length/2){
+    LastHalf.push(arr[i])
+  }else{
+    LastHalf.reverse()
+  }
+}
 
- console.log(FirstHalf)
+LastHalf.reverse()
+
+ console.log(FirstHalf,LastHalf)
 
   return (
     <div>
       <div className="center">
         {arr.map(pic=>{
           return( 
-          <div  className="center" style={{border:'1px solid black',width:'30vw',overflow:"hidden"}}>
+          <div key={pic}  className="center" style={{border:'1px solid black',width:'30vw',overflow:"hidden"}}>
               <img style={{border:"5px solid black",width:'50vw',
               height:"50vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
           </div>)
