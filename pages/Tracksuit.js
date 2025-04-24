@@ -4,16 +4,31 @@ import Previous from "@/comp/prev";
 
 function SimpleSlider() {
  const [arr, setArr] = useState(['TrackPic1.jpeg',"TrackPic2.jpeg","TrackPic3.jpeg",'TrackPic4.jpeg',"TrackPic5.jpeg","TrackPic6.jpeg"])
+ const [FirstHalf, setFirst] = useState([])
+ const [LastHalf, setLast] = useState([])
  const router = useRouter() 
+
+ for(let i = 0; i < arr.length/2; i++){
+  if(FirstHalf.length < arr.length/2 ){
+  FirstHalf.push(arr[i])}
+ }
+
+ 
+ for(let i = arr.length ; i > arr.length/2; i++){
+  if(LastHalf.length < arr.length/2 ){
+  LastHalf.push(arr[i])}
+ }
+
+ console.log(FirstHalf)
 
   return (
     <div>
-      <div style={{flexDirection:"row"}}>
+      <div className="center">
         {arr.map(pic=>{
           return( 
-          <div  className="center" style={{border:'1px solid black',width:'30vw'}}>
-              <img style={{border:"5px solid black",width:'20vw',
-              height:"20vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
+          <div  className="center" style={{border:'1px solid black',width:'30vw',overflow:"hidden"}}>
+              <img style={{border:"5px solid black",width:'50vw',
+              height:"50vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
           </div>)
         })} 
       </div>
