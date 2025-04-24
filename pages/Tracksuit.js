@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Previous from "@/comp/prev";
 
 function SimpleSlider() {
- const [arr, setArr] = useState(['TrackPic1.jpeg',"TrackPic2.jpeg","TrackPic3.jpeg",'TrackPic4.jpeg',"TrackPic5.jpeg","TrackPic6.jpeg"])
+ const [arr, setArr] = useState([1,2,3,4,5,6,'TrackPic1.jpeg',"TrackPic2.jpeg","TrackPic3.jpeg",'TrackPic4.jpeg',"TrackPic5.jpeg","TrackPic6.jpeg"])
  const [FirstHalf, setFirst] = useState([])
  const [LastHalf, setLast] = useState([])
  const router = useRouter() 
 
  for(let i = 0; i < arr.length/2; i++){
-  if(FirstHalf.length < arr.length/2 ){
+  if(FirstHalf.length < arr.length/2){
   FirstHalf.push(arr[i])}
  }
 
@@ -17,12 +17,12 @@ function SimpleSlider() {
  for(let i = arr.length-1; i > arr.length/2-1; i--){
   if(LastHalf.length < arr.length/2){
     LastHalf.push(arr[i])
+    con
   }else{
     LastHalf.reverse()
   }
 }
 
-LastHalf.reverse()
 
  console.log(FirstHalf,LastHalf)
 
