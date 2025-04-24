@@ -8,11 +8,12 @@ function SimpleSlider() {
 
   return (
     <div>
-      <div>
+      <div style={{flexDirection:"row"}}>
         {arr.map(pic=>{
           return( 
           <div  className="center" style={{border:'1px solid black',width:'30vw'}}>
-             <img style={{border:"5px solid black",width:'20vw',height:"20vw",margin:"20px",overflow:"hidden"}} src={pic}></img>  
+              <img style={{border:"5px solid black",width:'20vw',
+              height:"20vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
           </div>)
         })} 
       </div>
