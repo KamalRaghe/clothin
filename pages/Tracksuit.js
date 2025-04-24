@@ -17,14 +17,15 @@ function SimpleSlider() {
  for(let i = arr.length-1; i > arr.length/2-1; i--){
   if(LastHalf.length < arr.length/2){
     LastHalf.push(arr[i])
-  }else{
-
-  }    LastHalf.reverse()
-    console.log(LastHalf)
+  }
 }
 
+if(LastHalf[LastHalf.lenght])
+
+LastHalf.reverse()
 
  console.log(FirstHalf,LastHalf)
+ console.log(LastHalf)
 
   return (
     <div>
