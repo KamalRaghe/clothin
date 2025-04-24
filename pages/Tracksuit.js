@@ -8,10 +8,10 @@ function SimpleSlider() {
 
   return (
     <div>
-      <div style={{height:"100vh",border:'1px solid black'}}>
+      <div>
         {arr.map(pic=>{
           return( 
-          <div>
+          <div  className="center" style={{border:'1px solid black',width:'30vw'}}>
              <img style={{border:"5px solid black",width:'20vw',height:"20vw",margin:"20px",overflow:"hidden"}} src={pic}></img>  
           </div>)
         })} 
