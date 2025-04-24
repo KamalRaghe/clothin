@@ -17,10 +17,10 @@ function SimpleSlider() {
  for(let i = arr.length-1; i > arr.length/2-1; i--){
   if(LastHalf.length < arr.length/2){
     LastHalf.push(arr[i])
-    con
   }else{
-    LastHalf.reverse()
-  }
+
+  }    LastHalf.reverse()
+    console.log(LastHalf)
 }
 
 
