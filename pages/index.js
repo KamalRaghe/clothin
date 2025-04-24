@@ -22,7 +22,7 @@ function SimpleSlider() {
             <Previous button={Next} next={true} pic={arr[1]}/>
           </div>
         <div> 
-          <button>See all</button>
+          <button onClick={()=>{router.push('/Tracksuit')}} >See all</button>
         </div>
       </div>
     </div>
