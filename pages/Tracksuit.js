@@ -20,12 +20,11 @@ function SimpleSlider() {
   }
 }
 
-if(LastHalf[LastHalf.lenght])
+if(LastHalf[0] === arr[arr.length-1]){
+  LastHalf.reverse()
+}
 
-LastHalf.reverse()
-
- console.log(FirstHalf,LastHalf)
- console.log(LastHalf)
+ console.log(arr[arr.length-1],LastHalf[0],LastHalf)
 
   return (
     <div>
