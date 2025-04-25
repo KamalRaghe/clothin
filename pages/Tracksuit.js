@@ -28,12 +28,12 @@ if(LastHalf[0] === arr[arr.length-1]){
 
   return (
     <div>
-      <div className="center column" style={{height:"100vh",border:"5px solid black",flexWrap:"wrap"}} >
+      <div className="center column" style={{height:"300vh",border:"5px solid black",flexWrap:"wrap"}} >
         {arr.map(pic=>{
           return( 
           <div key={pic}  className="center">
-              <img style={{border:"5px solid black",width:'20vw',
-              height:"20vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
+                  <img style={{width:'50vw',flexWrap:"wrap",
+                  height:"50vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
           </div>)
         })} 
       </div>
