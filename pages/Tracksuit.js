@@ -32,8 +32,8 @@ if(LastHalf[0] === arr[arr.length-1]){
         {arr.map(pic=>{
           return( 
           <div key={pic}  className="center">
-              <img style={{border:"5px solid black",width:'50vw',
-              height:"50vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
+              <img style={{border:"5px solid black",width:'20vw',
+              height:"20vw",margin:"20px",overflow:"hidden"}} src={pic}></img>
           </div>)
         })} 
       </div>
